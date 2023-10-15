@@ -4,7 +4,7 @@ This page will guide different steps required to setup a Jenkins and its pre-req
 -----
 # Install Java 17 (17 works with jenkins)  
 - sudo apt-get update
-- sudo apt-get install openjdk-17-jdk
+- sudo apt-get install openjdk-17-jdk -y
 
 ## Check Installation
 - java -version
@@ -39,7 +39,7 @@ Open terminal and execute below command
 - echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 
  - sudo apt-get update
- - sudo apt-get install jenkins
+ - sudo apt-get install jenkins -y
 
 ## Enable Jenkins Service
 - sudo systemctl enable jenkins
